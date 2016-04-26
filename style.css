@@ -17,166 +17,84 @@ html, body {
 }
 
 body {
-  color: #3e3739;
-  text-align: center;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  background-color: #efebe3;
-}
-
-.name {
-  font-family: "freight-big-pro";
-  font-size: 54px;
-  line-height: 1;
-  letter-spacing: 0.25em;
-  text-indent: 0.25em;
+  background-color: #F2F2F4;
+  border-top: 4px solid #3B3D3F;
+  font-family: "le-monde-livre-std";
   font-weight: 400;
-  font-style: italic;
-  text-transform: uppercase;
-  margin: 12rem 0 .5rem 0;
-  padding: 0;
+  font-style: normal;
+  font-size: 100%;
+  color: #3B3D3F;
 }
 
-.game {
-  font-family: "futura-pt";
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.25em;
-  text-indent: 0.25em;
+a {
+  color: #0F72A1;
+}
+
+a:hover,
+a:focus,
+a:active {
+  outline: none;
+  border-bottom: 1px solid #0F72A1;
+}
+
+.stripe {
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.pageTitle {
+  margin-bottom: 3rem;
+  font-size: 1.125rem;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+}
+
+.headlineTwitter {
+  color: inherit;
+}
+
+.headlineTwitter:hover,
+.headlineTwitter:focus,
+.headlineTwitter:active {
+  color: #0F72A1;
+}
+
+.headlineTwitter .commercialAt{
+  display: inline-block;
+  position: relative;
+  bottom: .25em;
+  font-size: .625rem;
+  letter-spacing: .3em;
+}
+
+.listTitle {
+  margin-bottom: .75rem;
+  font-size: .75rem;
   font-weight: 700;
-  text-transform: uppercase;
-  margin: 0;
 }
 
-.ahalogy-link:hover,
-.ahalogy-link:focus,
-.ahalogy-link:active {
-  color: #c31230;
-  outline: none;
-}
-
-.social-links {
+.now {
   list-style: none;
-  margin: 3rem 0 0 0;
+  font-style: italic;
+  font-size: 1.125rem;
 }
 
-.social-links > li {
-  display: inline-block;
-  margin-right: 2.5em;
+.now li {
+  margin-bottom: .75rem;
 }
 
-.social-links >li:last-child {
-  margin-right: 0;
+.now .small {
+  margin-top: 3rem;
+  font-size: .75rem;
 }
 
-.social-link {
-  display: inline-block;
-  height: 20px;
-  opacity: .25;
-  text-indent: -999999px;
-  overflow: hidden;
-  background-image: url('images/social-links-sprite.png');
-  background-size: 150px 20px;
-  -webkit-transition: all .1s ease-in;
-}
-
-.social-link:hover,
-.social-link:focus,
-.social-link:active {
-  opacity: 1;
-  outline: none;
-}
-
-.twitter-link {
-  width: 25px;
-  background-position: 0 0;
-}
-
-.instagram-link {
-  width: 20px;
-  background-position: -30px 0;
-}
-
-.medium-link {
-  width: 25px;
-  background-position: -60px 0;
-}
-
-.dribbble-link {
-  width: 20px;
-  background-position: -90px 0;
-}
-
-.mail-link {
-  width: 31px;
-  background-position: -120px 0;
-}
-
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-hgroup,
-.social-links,
-.countdown {
-  opacity:0;
-  -webkit-animation:fadeIn ease-in 1;
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
-
-  -webkit-animation-delay: .5s;
-  -moz-animation-delay: .5s;
-  animation-delay: .5s;
-}
-
-.daysLeftCountdown {
-  background: black;
-}
-
-.countdownWrapper {
-  position: fixed;
-  bottom: 120px;
-  right: 120px;
-}
-.countdown {
-  font-family: "futura-pt";
-  font-size: 120px;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  color: white;
-  text-align: center;
-}
-
-@media (max-width: 640px) {
-  .name {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .name {
-    font-size: 40px;
-    letter-spacing: 0.15em;
-    text-indent: 0.15em;
-    margin: 3rem 0 1rem 0;
-  }
-  .game {
-    font-size: 14px;
-    letter-spacing: 0.15em;
-    text-indent: 0.15em;
-  }
-  .social-links > li {
-    margin-right: 2em;
+.asterisk:after {
+  content: "*";
+  position: relative;
+  bottom: .25rem;
+  font-size: .75rem;
 }
