@@ -97,4 +97,8 @@ a:active {
   position: relative;
   bottom: .25rem;
   font-size: .75rem;
+@media only screen and (min-width: 36rem) {
+  .stripe {
+    padding: 6rem;
+  }
 }
