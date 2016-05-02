@@ -1,5 +1,3 @@
-/* HAI IT'S NICK */
-
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, b, i, ol, ul, li, footer, header, hgroup {
   margin: 0;
   padding: 0;
@@ -23,10 +21,7 @@ body {
   -webkit-text-size-adjust: 100%;
   background-color: #F2F2F4;
   border-top: 4px solid #3B3D3F;
-  font-family: "le-monde-livre-std";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 100%;
+  font: normal 400 100% "le-monde-livre-std";
   color: #3B3D3F;
 }
 
@@ -51,10 +46,12 @@ a:active {
   font-size: 1.125rem;
   letter-spacing: .25em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 .headlineTwitter {
   color: inherit;
+  white-space: nowrap;
 }
 
 .headlineTwitter:hover,
@@ -83,20 +80,10 @@ a:active {
   font-size: 1.125rem;
 }
 
-.now li {
+.now > li {
   margin-bottom: .75rem;
 }
 
-.now .small {
-  margin-top: 3rem;
-  font-size: .75rem;
-}
-
-.asterisk:after {
-  content: "*";
-  position: relative;
-  bottom: .25rem;
-  font-size: .75rem;
 @media only screen and (min-width: 36rem) {
   .stripe {
     padding: 6rem;
