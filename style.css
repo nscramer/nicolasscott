@@ -19,21 +19,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  background-color: #F2F2F4;
-  border-top: 4px solid #3B3D3F;
+  background-color: #FFFDF8;
+  border-top: 4px solid #282725;
   font: normal 400 100% "le-monde-livre-std";
-  color: #3B3D3F;
+  color: #282725;
 }
 
 a {
-  color: #0F72A1;
+  color: #AA6C39;
 }
 
 a:hover,
 a:focus,
 a:active {
   outline: none;
-  border-bottom: 1px solid #0F72A1;
+  border-bottom: 1px solid #AA6C39;
 }
 
 .stripe {
@@ -57,7 +57,7 @@ a:active {
 .headlineTwitter:hover,
 .headlineTwitter:focus,
 .headlineTwitter:active {
-  color: #0F72A1;
+  color: #AA6C39;
 }
 
 .headlineTwitter .commercialAt{
