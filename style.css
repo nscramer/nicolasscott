@@ -1,4 +1,4 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, b, i, ol, ul, li, footer, header, hgroup {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, b, i, ol, ul, li, figure, figcaption, footer, header, hgroup {
   margin: 0;
   padding: 0;
   border: 0;
@@ -19,53 +19,189 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  background-color: #FFFDF8;
-  border-top: 4px solid #282725;
-  font: normal 400 100% "le-monde-livre-std";
-  color: #282725;
+  background-color: #FFFDFB;
+  border-top: 4px solid #151203;
+  font: normal 400 16px/150% "le-monde-livre-std";
+  color: #151203;
+}
+
+img {
+  width: 100%;
+  align: text-top;
 }
 
 a {
-  color: #AA6C39;
+  border-bottom: 1px dotted;
 }
 
 a:hover,
 a:focus,
 a:active {
   outline: none;
-  border-bottom: 1px solid #AA6C39;
+  color: #8D897E;
+  border-bottom-color: #8D897E;
 }
 
-.stripe {
+.pageTitle a {
+  font-weight: 400;
+  border: none;
+}
+
+.listTitle a {
+  border: none;
+}
+.name {
+  font-family: "lemonde-sans";
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.pageTitle a:hover,
+.pageTitle a:focus,
+.pageTitle a:active,
+.navigation a:hover,
+.navigation a:focus,
+.navigation a:active {
+  border-bottom: 1px dotted;
+}
+
+.ledeList a {
+  font-weight: inherit;
+}
+
+.pageWrap {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+}
+
+.full,
+.jumbo {
+  margin: 0 auto;
+}
+
+.full {
+  padding: 1rem 1.5rem;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.3333333333;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: .25rem;
 }
 
 .pageTitle {
-  margin-bottom: 3rem;
   font-size: 1.125rem;
-  letter-spacing: .25em;
+  letter-spacing: .275em;
   text-transform: uppercase;
   line-height: 1.4;
+  font-weight: 400;
 }
 
-.headlineTwitter {
-  color: inherit;
-  white-space: nowrap;
+p {
+  margin-bottom: 1rem;
 }
 
-.headlineTwitter:hover,
-.headlineTwitter:focus,
-.headlineTwitter:active {
-  color: #AA6C39;
+ol,
+ul {
+  padding-left: 1rem;
 }
 
-.headlineTwitter .commercialAt{
+ul {
+  list-style: circle;
+}
+
+li {
+  padding-left: .25rem;
+  margin-bottom: 1rem;
+}
+
+.figureWrap {
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+
+// Placeholder Horseshit
+.sixteenNineFigure {
+  padding-top: 56.25%;
+}
+
+.nineSixteenFigure {
+  padding-top: 177.77%;
+}
+
+.squareFigure {
+  padding-top: 100%;
+}
+
+.figureGrid {
+  padding-bottom: 1%;
+  text-align: left;
+}
+
+.figureGrid .figureWrap {
   display: inline-block;
-  position: relative;
-  bottom: .25em;
-  font-size: .625rem;
-  letter-spacing: .3em;
+  width: 48%;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.u-clearfix {
+  zoom:1;
+}
+
+.u-clearfix:before,
+.u-clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.u-clearfix:after {
+  clear: both;
+}
+
+footer {
+//  margin-top: 3rem;
+//  padding: 0 1rem 2rem 1rem;
+}
+
+.stuckBottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footerWrap {
+//  border-bottom: 4px solid #151203;
+  padding: 1.5rem;
 }
 
 .listTitle {
@@ -74,18 +210,79 @@ a:active {
   font-weight: 700;
 }
 
-.now {
+.ledeList {
   list-style: none;
   font-style: italic;
   font-size: 1.125rem;
+  padding: 0;
+  margin-top: .625rem;
 }
 
-.now > li {
+.ledeList > li {
   margin-bottom: .75rem;
+  padding: 0;
 }
 
-@media only screen and (min-width: 36rem) {
+.tombstone {
+  display: inline-block;
+  height: .5rem;
+  width: .5rem;
+  background: transparent url("/images/tombstone.svg") no-repeat 100%;
+}
+
+@media only screen and (min-width: 41rem) {
+  header {
+    padding-top: 4rem;
+  }
+
   .stripe {
     padding: 6rem;
   }
-}
+  .pageWrap {
+    padding: 2rem;
+  }
+  .full {
+    width: 50%;
+  }
+
+  .jumbo {
+//    width: 75%;
+  }
+  .aside {
+    width: 20%;
+    float: right;
+    border-top: 4px solid black;
+    margin: 1.25rem 0 0 0;
+    padding: 1rem 1rem 0 0;
+    text-align: center;
+    font-family: "lemonde-sans";
+    font-size: .75rem;
+    line-height: 1.25;
+  }
+  .aside .listTitle {
+    margin-bottom: 0;
+  }
+  .aside ul {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .aside li {
+    list-style: none;
+    margin: .25rem 0 0 0;
+    padding: 0;
+  }
+  h2 {
+    font-size: 3.6666rem;
+    line-height: 1.25;
+//    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin-bottom: 0.9rem;
+    margin-top: 1.8rem;
+  }
+  .figureGrid--fourWide .figureWrap {
+    width: 23.5%;
+  }
