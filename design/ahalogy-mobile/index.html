@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nicolas Scott Cramer</title>
+  <meta name="author" content="Nicolas Scott Cramer">
+  <meta name="description" content="Nicolas Scott Cramer">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/ico" />
+  <script src="https://use.typekit.net/oru8kps.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="full">
+        <h1 class="pageTitle"><a href="/">Nicolas Scott Cramer</a></h1>
+      </div>
+    </div>
+  </header>
+  
+  <article>
+    <div class="wrap">
+      <div class="full">
+        <span class="navigation listTitle"><a href="../">Design</a>&nbsp;&nbsp;|&nbsp;&nbsp;Ahalogy Mobile</span>
+      </div>
+      <div class="jumbo">
+        <div class="figureWrap">
+          <figure>
+            <img src="/images/mobile-hero.jpg" />
+          </figure>
+        </div>
+      <div class="aside">
+        <p class="listTitle">Project details</p>
+        <ul>
+          <li><a href="https://www.ahalogy.com" target="_blank">Ahalogy</a>, &nbsp;Spring&nbsp;2014</li>
+          <li>39&deg;&nbsp;7&prime;&nbsp;43.2696&Prime;&nbsp;N, 84&deg;&nbsp;25&prime;&nbsp;50.7756&Prime;&nbsp;W</li>
+        </ul>
+        <p class="listTitle">Contributed to</p>
+        <ul>
+          <li>Product definition</li>
+          <li>Interaction patterns</li>
+          <li>Visual design</li>
+          <li>UI development</li>
+        </ul>
+        <p class="listTitle">Alongside</p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/mwohlschlaeger" target="_blank">Michael Wohlschlaeger</a></li>
+          <li><a href="http://scottsullivan.io" target="_blank">Scott Sullivan</a></li>
+          <li><a href="https://github.com/robustdj" target="_blank">Derrick Camerino</a></li>
+          <li><a href="http://github.com/RobinDaugherty/" target="_blank">Robin Daugherty</a></li>
+          <li><a href="https://github.com/geesu" target="_blank">Josh Becker</a></li>
+          <li>and many others</a></li>
+        </ul>
+      </div>
+      <div class="full">
+        <h2>Before there were Instant Articles, there was Ahalogy Mobile. For a while anyway.</h2>
+        <p><em class="name">Ahalogy Mobile</em> was a product designed and built for publishers to improve the reading experience of their sites when viewed within a mobile in-app browser. I worked on the system architecture, designed it and contributed to its development.</p>
+        <h3>The rub</h3>
+        <p>Ahalogy works with big consumer brands and high-end independent publishers, helping them spot trends, produce useful stories, and publish those effectively on Pinterest and elsewhere.</p>
+        <p>We started realizing our customers’ upside was being capped by the user experience of the pages to which the Pins linked.</p>
+        <p>Too often, tapping a Pin from Pinterest’s mobile app would fire up a <code>UIWebView</code> (back before we had <code>SFSafariViewController</code>), inside of which you had the slow, ad-laden, painful privilege of viewing the recipe, look, or article.</p>
+        <div class="figureWrap">
+          <figure>
+            <img src="/images/publishers-mobile-struggles.jpg" />
+          </figure>
+          <figcaption>These are typical of what many Pins lead to</figcaption>
+        </div>
+        <p>These smart but small publishers were still struggling with adapting to the new realities of socially discovered content. Their sites were often still unresponsive, high latency, and poorly organized.</p>
+        <p>Back then I wrote <a href="https://medium.com/inside-ahalogy/trucks-spokes-and-pinterest-8616156581f0#.datqn7e45" target="_blank">more about this problem</a> if it tickles your fancy.</p>
+        <h3>The design</h3>
+        <p>This was before <a href="https://www.ampproject.org" target="_blank">Google AMP</a> or anything like it. So we had to build it ourselves.</p>
+        <p>The design began, of course, with how it worked. We needed to control the presentation of contents across thousands of sites on multiple versions of Wordpress, only on certain devices and from specific referrers, all without changing the sites' actual themes in any way.</p>
+        <p>The creators inserted our javascript snippet which, when identifying inbound traffic from Pinterest on a mobile device, would stop the DOM from loading and display the same content from our server. We stored parsed copies of all their old and newly created posts, and made those available from a CDN. That way we could load significantly faster, control the interface for reading, asynchronously insert the right ad at the right point in the article, and recommended the perfect article to read next from any of the publishers in our content network.</p>
+        <div class="figureWrap">
+          <figure>
+            <img src="/images/mobile-one.png" />
+          </figure>
+        </div>
+        <p>The interface design was based on a card stack structure. We used the semantics of the post to organize it into multiple cards which the reader could scroll and flip through (A few paragraphs, an image and its caption, a list of ingredients are examples of individual cards).</p>
+      </div>
+      <div class="figureGrid figureGrid--fourWide">
+        <div class="figureWrap figureWrap--shadow figureWrap--inApp">
+          <figure>
+            <img src="/images/mobilify-cover.jpg" />
+          </figure>
+        </div>
+        <div class="figureWrap figureWrap--shadow">
+          <figure>
+            <img src="/images/mobilify-text.jpg" />
+          </figure>
+        </div>
+        <div class="figureWrap figureWrap--shadow">
+          <figure>
+            <img src="/images/mobilify-engagement.jpg" />
+          </figure>
+        </div>
+        <div class="figureWrap figureWrap--shadow">
+          <figure>
+            <img src="/images/mobilify-recommended.jpg" />
+          </figure>
+        </div>
+      </div>
+      <div class="full">
+        <p>The result was a faster, cleaner user experience we could easily distribute to all of our partner sites. Time on site increased by <span class="name">30&ndash;100%</span>. And because the experience was so unique and the single sponsorship per post so engaging (without turning the experience sour), we were selling to top advertisers at a premium CPM. That gets us paid and enables the publishers to build their businesses. It was a win for all involved: readers, publishers, and advertisers.</p>
+        <h3>The premature demise</h3>
+        <p>The reason I haven't linked out to any live examples, dear reader, is that the product met its demise mere months after launch. Ahalogy had to pull it from the market because of what we'll call some strategic bullying by another company.</p>
+        <p>The end notwithstanding, Ahalogy Mobile showed me there’s still innovation left to be done in the rebundling of digital publishers. Perhaps it will be Google’s AMP which solves some of these problems for the myriad small but influential blogs. Or it will be the native platforms themselves like <a href="https://instantarticles.fb.com" target="_blank">Facebook Instant Articles</a> and <a href="http://blog.instapaper.com/post/149374303661" target="_blank">whatever Pinterest does with their Instapaper acquisition</a>. As long as someone does something.&nbsp;&nbsp;<span class="tombstone"></span></p>
+      </div>
+    </div>
+  </article>
+
+  <section class="otherProjects">
+    <div class="wrap">
+      <div class="full">
+        <span class="listTitle">Other projects</span>
+        <ul class="ledeList">
+          <li><a href="/design/spokes/">Spokes</a>, a bike share app</li>
+          <li><a href="/design/muse/">Muse</a>, a brand new product for Ahalogy</li>
+          <li><a href="/design/aperture/">Aperture</a>, a Pinterest platform by Ahalogy</li>
+          <!-- <li><a href="/design/ahalogy-mobile/">Ahalogy Mobile</a>, mobile web instant articles</li> -->
+          <li><a href="/design/ahalogy-identity/">Ahalogy Identity</a>, the visual identity</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="full footerWrap">
+        <a class="listTitle" href="#"`>Say hello</a>
+      </div>
+    </div>
+  </footer>
+  </div>
+  
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-32321061-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
