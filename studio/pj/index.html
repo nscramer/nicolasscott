@@ -18,7 +18,6 @@
 </head>
 
 <body>
-  <div class="u-clearfix">
   <section class="stripe stripe--hero">
     <div class="stripeWrap">
       <header>
@@ -29,14 +28,15 @@
 
   <section class="stripe stripe--headline">
     <div class="stripeWrap">
-      <h1>PJ Striet&rsquo;s Modern Fitness</h1>
-      <h2>Get fit as hell. Whenever. Wherever.</h2>
+      <hgroup>
+        <h1>PJ Striet&rsquo;s Modern Fitness</h1>
+        <h2>Get fit as hell. Whenever. Wherever.</h2>
+      </hgroup>
       <p class="description">In-person training or mobile coaching to get you in the best shape of your life.</p>
       <a class="btn btn--heroCTA" href="mailto:patrickstriet@gmail.com">Apply to train</a>
       <a class="learnMoreArrow" href="#Companies">Learn more</a>
     </div>
   </section>
-</div>
   <section id="Companies" class="stripe stripe--companies">
     <div class="stripeWrap">
       <p>High performing people from these companies have PJ train their asses off.</p>
@@ -72,7 +72,7 @@
       <div class="trainingComponents u-clearfix">
         <ul class="trainingList">
           <li class="trainingListItem">
-            <div class="trainingIcon trainingIcon--strength"></div>
+            <div data-aos="fade-up" class="trainingIcon trainingIcon--strength"></div>
             <h4>Strength<br>training</h4>
           </li>
           <li class="trainingListItem">
@@ -217,19 +217,5 @@
 
   <!-- Google Analytics -->
 
-  <!-- Day of week -->
-  <script>
-  var d = new Date();
-  var weekday = new Array(7);
-  weekday[0]=  "Sunday";
-  weekday[1] = "Monday";
-  weekday[2] = "Tuesday";
-  weekday[3] = "Wednesday";
-  weekday[4] = "Thursday";
-  weekday[5] = "Friday";
-  weekday[6] = "Saturday";
-
-  var n = weekday[d.getDay()];
-  </script>
 </body>
 </html>
