@@ -1,0 +1,423 @@
+/* PJ STRIET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, b, i, ol, ul, li, blockquote, figure, figcaption, footer, header, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: inherit;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: #FFFFFF;
+  font: normal 400 16px/150% "jaf-facitweb";
+  color: #252522;
+}
+
+img {
+  width: 100%;
+  vertical-align: text-top;
+}
+
+.u-clearfix {
+  zoom:1;
+}
+
+.u-clearfix:before,
+.u-clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.u-clearfix:after {
+  clear: both;
+}
+
+a {
+  color: #A82F30;
+}
+
+p {
+  font-size: .875rem;
+  font-weight: 400;
+  margin-bottom: .875rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-image: url("images/pj-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  text-indent: -999999px;
+  overflow: hidden;
+}
+
+header .icon {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: .75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: .25rem;
+}
+
+h4 {
+  font-size: .75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.stripe {
+}
+
+.stripe--hero {
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  background-image: url("images/pj-hero-idea.jpg");
+  background-size: cover;
+  background-position: 100% 70%;
+}
+
+.stripe--headline {
+  text-align: center;
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+}
+
+.heroFaceFrame {
+  width: 38%;
+  height: 65%;
+  border: 2px solid #A82F30;
+  position: absolute;
+  right: 7vw;
+  bottom: 5vh;
+}
+
+.stripe--companies {
+  background-color: #F4F4F4;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.companyExamples {
+  margin-top: 1.5rem;
+}
+
+.stripeWrap {
+  max-width: 36rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.stripe--hero .stripeWrap {
+  padding: 2rem 1rem;
+}
+
+.stripe--press .stripeWrap {
+  padding: 1.5rem 0;
+}
+
+.btn--heroCTA {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: #A82F30;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 2rem 0 0 0;
+  letter-spacing: 0.03em;
+}
+
+.learnMoreArrow {
+  height: 1rem;
+  width: 2.25rem;
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  margin-left: -1.125rem;
+  background-color: transparent;
+  background-image: url("images/downArrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+
+header {
+}
+
+.stripe--training .stripeWrap {
+  padding-bottom: 1.5rem;
+}
+
+.stripe--trainingComponents {
+  background-color: #F4F4F4;
+  margin-bottom: 1.5rem;
+}
+
+.trainingList {
+  list-style: none; 
+  text-align: center;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+.trainingListItem {
+  width: 33%;
+  float: left;
+  padding: 8% 0;
+}
+
+.trainingIcon {
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-bottom: .5rem;
+}
+
+.trainingIcon--strength {
+  background-image: url("images/strength-icon.svg");
+}
+
+.trainingIcon--conditioning {
+  background-image: url("images/conditioning-icon.svg");
+}
+
+.trainingIcon--core {
+  background-image: url("images/core-icon.svg");
+}
+
+.trainingIcon--nutrition {
+  background-image: url("images/nutrition-icon.svg");
+}
+
+.trainingIcon--education {
+  background-image: url("images/education-icon.svg");
+}
+
+.trainingIcon--flexibility {
+  background-image: url("images/flexibility-icon.svg");
+}
+
+.programIcon {
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-bottom: 1rem;
+}
+
+.programIcon--inPersonTraining {
+  background-image: url("images/in-person-training.svg");
+}
+
+.programIcon--mobileCoaching {
+  height: 3.5rem;
+  background-image: url("images/mobile-coaching.svg");
+}
+
+.programOption { 
+  margin-bottom: .5rem;
+}
+
+.programOption .programIcon { 
+  float: left;
+  margin-right: 1rem;
+}
+
+.programOption .programDetails {
+  float: left;
+}
+
+.programOptionWrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgba(244,244,244,0.2);
+}
+
+.testimonial {
+  border-top: 1px solid #D4D4D4;
+  border-bottom: 1px solid #D4D4D4;
+  padding: 1rem 0;
+  margin: 1.5rem 0 4.5rem 0;
+}
+
+.testimonial:last-child {
+  margin-bottom: 1.5rem;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+blockquote footer {
+  font-size: .75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.stripe--press {
+  background-color: #F4F4F4;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.pressLogosList {
+  list-style: none; 
+  text-align: center;
+}
+.pressLogosListItem {
+  width: 49%;
+  float: left;
+  padding: 0 1rem;
+}
+
+.pressLogo {
+  width: 8rem;
+  height: 4rem;
+  display: inline-block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.pressLogo--mensHealth {
+  background-image: url("images/mens-health.svg");
+}
+
+.pressLogo--mensFitness {
+  background-image: url("images/mens-fitness.svg");
+}
+
+.pressLogo--womensHealth {
+  background-image: url("images/womens-health.svg");
+}
+
+.pressLogo--shape {
+  height: 2rem;
+  margin: 1rem 0;
+  background-image: url("images/shape.png");
+}
+
+.pressLogo--vanityFair {
+  background-image: url("images/vanity-fair.svg");
+}
+
+.pressLogosListItem--livestrong {
+  padding: 0;
+}
+
+.pressLogo--livestrong {
+  background-image: url("images/livestrong.svg");
+}
+
+.stripe--about img {
+  display: block;
+  margin: 0 auto;
+  width: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.stripe--about h4 {
+  margin-bottom: .5rem;
+}
+
+.bookCover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+footer {
+  font-size: .625rem;
+}
+
+@media only screen and (min-width: 30rem) {
+  .stripe--headline .description {
+    padding: 0 5rem;
+  }
+}
+@media only screen and (min-width: 60rem) {
+  .stripe--trainingComponents {
+    background-color: inherit;
+  }
+  .trainingListItem {
+    background-color: #F4F4F4;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  .stripe--hero {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    background-position: 100% 70%;
+    float: left;
+  }
+  .stripe--headline {
+    width: 50vw;
+    height: 100vh;
+    float: left;
+  }
+  
+  .stripe--headline .stripeWrap {
+    margin-top: 50%;
+  }
+
+}

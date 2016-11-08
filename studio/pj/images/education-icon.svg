@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="117px" viewBox="0 0 92 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Education</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Education" transform="translate(0.000000, -0.448800)" fill="#252522">
+            <polygon id="Shape" points="0 12.5 0 14.5 0 114.5 0 116.5 2 116.5 90 116.5 92 116.5 92 114.5 92 14.5 92 12.5 90 12.5 64.75 12.5 64.75 16.5 88 16.5 88 112.5 4 112.5 4 16.5 27.25 16.5 27.25 12.5 2 12.5"></polygon>
+            <path d="M26,8.5 L26,10.5 L26,18.5 L26,20.5 L28,20.5 L64,20.5 L66,20.5 L66,18.5 L66,10.5 L66,8.5 L64,8.5 L28,8.5 L26,8.5 L26,8.5 Z M30,12.5 L62,12.5 L62,16.5 L30,16.5 L30,12.5 L30,12.5 Z" id="Shape"></path>
+            <path d="M46,0.5 C43.91088,0.5 41.850988,0.9524 40,2 C36.298692,4.096 33.970372,8.1484 34,12.3752 L38,12.3752 C37.9812,9.6988 39.611176,6.8528 42,5.5 C44.389264,4.148 47.748368,4.1272 50.125,5.5 C52.502088,6.872 54.041488,9.6988 54,12.3752 L58,12.4992 C58.06552,8.2728 55.808788,4.2504 52.125,2.124 C50.283448,1.0604 48.08912,0.5084 46,0.4992 L46,0.5 Z" id="Shape"></path>
+            <path d="M10,40.4488 L10,42.4488 L10,90.4488 L10,92.4488 L12,92.4488 L80,92.4488 L82,92.4488 L82,90.4488 L82,42.4488 L82,40.4488 L80,40.4488 L12,40.4488 L10,40.4488 L10,40.4488 Z M14,44.4488 L78,44.4488 L78,88.4488 L14,88.4488 L14,44.4488 L14,44.4488 Z" id="Shape"></path>
+            <polygon id="Shape" points="10 72.4488 10 76.4488 82 76.4488 82 72.4488"></polygon>
+            <polygon id="Shape" points="10 56.4488 10 60.4488 82 60.4488 82 56.4488"></polygon>
+            <polygon id="Shape" points="22 40.4488 22 92.4488 26 92.4488 26 40.4488"></polygon>
+            <polygon id="Shape" points="66 40.4488 66 92.4488 70 92.4488 70 40.4488"></polygon>
+            <polygon id="Shape" points="54 40.4488 54 92.4488 58 92.4488 58 40.4488"></polygon>
+        </g>
+    </g>
+</svg>

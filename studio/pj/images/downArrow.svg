@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="16px" viewBox="0 0 36 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>downArrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="downArrow" fill="#252522">
+            <path d="M25.6463467,6.97369704 L12.6863297,-9.42380296 C12.150161,-10.103303 11.1911255,-10.195303 10.5473438,-9.62780296 C9.90213994,-9.05930296 9.8149118,-8.05180296 10.3520286,-7.37180296 L22.5018668,8.00019704 L10.3520286,23.371197 C9.81585993,24.052697 9.90308808,25.060697 10.5473438,25.628197 C11.1906514,26.195697 12.150161,26.103697 12.6863297,25.424197 L25.6463467,9.02769704 C25.8824316,8.72969704 26,8.36469704 26,8.00019704 C26,7.63519704 25.8824316,7.27069704 25.6463467,6.97369704 L25.6463467,6.97369704 Z" id="Right-Arrow" transform="translate(18.000000, 8.000197) rotate(90.000000) translate(-18.000000, -8.000197) "></path>
+        </g>
+    </g>
+</svg>
