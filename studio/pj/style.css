@@ -23,7 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   background-color: #FFFFFF;
-  font: normal 400 16px/150% "jaf-facitweb";
+  font: normal 400 16px/150% "jaf-facitweb", sans-serif;
   color: #252522;
 }
 
