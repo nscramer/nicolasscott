@@ -401,8 +401,88 @@ blockquote footer {
 
 footer {
   font-size: .625rem;
+  text-align: center;
 }
 
+.socialIcons {
+  list-style: none;
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+}
+
+.socialIcons li {
+  display: inline-block;
+  margin-right: 2.5rem;
+}
+
+.socialIcons li:last-child {
+  margin-right: 0;
+}
+
+.socialIcon {
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  text-indent: -999999px;
+  overflow: hidden;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+
+.socialIcon--facebook {
+  background-image: url("images/facebook-icon.svg");
+}
+
+.socialIcon--facebook:hover,
+.socialIcon--facebook:focus,
+.socialIcon--facebook:active {
+  background-image: url("images/facebook-icon-red.svg");
+}
+
+.socialIcon--instagram {
+  background-image: url("images/instagram-icon.svg");
+}
+
+.socialIcon--instagram:hover,
+.socialIcon--instagram:focus,
+.socialIcon--instagram:active {
+  background-image: url("images/instagram-icon-red.svg");
+}
+
+.socialIcon--twitter {
+  background-image: url("images/twitter-icon.svg");
+}
+
+.socialIcon--twitter:hover,
+.socialIcon--twitter:focus,
+.socialIcon--twitter:active {
+  background-image: url("images/twitter-icon-red.svg");
+}
+
+.socialIcon--youtube {
+  background-image: url("images/youtube-icon.svg");
+  width: 2.25rem;
+}
+
+.socialIcon--youtube:hover,
+.socialIcon--youtube:focus,
+.socialIcon--youtube:active {
+  background-image: url("images/youtube-icon-red.svg");
+}
+
+.socialIcon--googlePlus {
+  background-image: url("images/google-plus-icon.svg");
+}
+
+.socialIcon--googlePlus:hover,
+.socialIcon--googlePlus:focus,
+.socialIcon--googlePlus:active {
+  background-image: url("images/google-plus-icon-red.svg");
+}
 
 .stripe {
   opacity: 0;
@@ -472,6 +552,9 @@ footer {
   .stripe--headline .description {
     padding: 0 1rem;
   }
+  .socialIcons li {
+    margin-right: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 30rem) {
@@ -511,6 +594,9 @@ footer {
   }
   .stripe--companies {
     padding: 10rem 0;
+  }
+  .socialIcons {
+    margin-top: 6rem;
   }
 }
 
