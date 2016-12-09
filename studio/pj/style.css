@@ -52,7 +52,7 @@ a {
   color: #A82F30;
 }
 
-p {
+p,li {
   font-size: .875rem;
   font-weight: 400;
   margin-bottom: .875rem;
@@ -259,6 +259,10 @@ header {
   background-image: url("images/flexibility-icon.svg");
 }
 
+.trainingIcon--access {
+  background-image: url("images/access-icon.svg");
+}
+
 .programIcon {
   height: 3rem;
   width: 3rem;
@@ -322,6 +326,8 @@ blockquote footer {
   font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
+  text-align: left;
+  font-style: normal;
 }
 
 .stripe--press {
