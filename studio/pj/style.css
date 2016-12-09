@@ -278,9 +278,9 @@ header {
   background-image: url("images/in-person-training.svg");
 }
 
-.programIcon--mobileCoaching {
+.programIcon--remoteCoaching {
   height: 3.5rem;
-  background-image: url("images/mobile-coaching.svg");
+  background-image: url("images/remote-coaching.svg");
 }
 
 .programOption { 
@@ -552,7 +552,7 @@ footer {
     font-size: 1.25rem;
     margin-bottom: 1.25rem;
   }
-  .programIcon--mobileCoaching {
+  .programIcon--remoteCoaching {
     width: 2rem;
   }
   .stripe--headline .description {
