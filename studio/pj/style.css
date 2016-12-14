@@ -490,6 +490,16 @@ footer {
   background-image: url("images/google-plus-icon-red.svg");
 }
 
+.socialIcon--medium {
+  background-image: url("images/medium-icon.svg");
+}
+
+.socialIcon--medium:hover,
+.socialIcon--medium:focus,
+.socialIcon--medium:active {
+  background-image: url("images/medium-icon-red.svg");
+}
+
 .stripe {
   opacity: 0;
   -webkit-animation:fadeIn ease-in 1;
