@@ -127,7 +127,7 @@ h5 {
 .stripe--headline {
   text-align: center;
   width: 100vw;
-  height: 51.5vh;
+  height: 48vh;
   position: relative;
 }
 
@@ -546,7 +546,7 @@ footer {
     height: 30vh;
   }
   .stripe--headline {
-    height: 60vh;
+    height: 57vh;
   }
   h2 {
     font-size: 1.25rem;
@@ -578,9 +578,6 @@ footer {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
-  .stripe--headline {
-    height: 45vh;
-  }
   .stripe--headline hgroup {
     margin-top: 2em;
   }
@@ -589,7 +586,7 @@ footer {
     clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 75%, 0% 0%);
   }
   .stripe--headline {
-    height: 45vh;
+    height: 38vh;
   }
   .stripe--companies,
   .stripe--trainingComponents,
