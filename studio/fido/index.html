@@ -4,105 +4,59 @@
     <meta charset="utf-8">
     <title>Impulse Control</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
-    <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
-
-    <!-- Demo styles -->
-    <style>
-    html, body {
-        position: relative;
-        height: 100%;
-    }
-    body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color:#000;
-        margin: 0;
-        padding: 0;
-    }
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        
-        /* Me, not the demo */
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    .slide-one { background-image: url("images/1.jpg"); }
-    .slide-two { background-image: url("images/2.jpg"); }
-    .slide-three { background-image: url("images/3.gif"); }
-    .slide-four { background-image: url("images/placeholder.jpg"); }
-    
-    .swiper-slide video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: auto;
-      z-index: 2;
-    }
-    
-    .overVideo {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      padding: 2rem 0;
-      text-align: center;
-      z-index: 3;
-      background-image: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.3));
-      color: white;
-      font-weight: bold;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide slide-one">
-              <div class="overVideo">
-                <span>One</span>
-              </div>
+          
+          <!-- Title -->
+          <div class="swiper-slide">
+            <h1>Impulse Control</h1>
+          </div>
+
+          <!-- Gear -->
+          <div class="swiper-slide">
+            <div class="fullBleedOverlay"></div>
+            <video src="images/gear.mov" autoplay loop muted playsinline preload></video>
+          </div>
+
+          <!-- Attack -->
+          <div class="swiper-slide">
+            <div class="overVideo">
+              <h2>Attack of the hungry puppy</h2>
+              <p>Your dog will smell the food and start to go after your hand. Keep still and let him sniff, lick, and nudge. Don't yell, tell him no, or discourage him.</p>
             </div>
-            <div class="swiper-slide slide-two">
-              <div class="overVideo">
-                <span>Two</span>
-              </div>
+            <video src="images/attack.mov" autoplay loop muted playsinline preload></video>
+          </div>
+
+          <!-- Nope -->
+          <div class="swiper-slide">
+            <div class="overVideo">
+              <h2>Patience = an opening</h2>
+              <p>As soon as he pauses his attack, slowly open up your hand. When he rushes back towards your hand, close it again before he gets a taste. Rinse and repeat.</p>
             </div>
-            <div class="swiper-slide slide-three">
-              <div class="overVideo">
-                <span>Three</span>
-              </div>
+            <video src="images/nope.mov" autoplay loop muted playsinline preload></video>
+          </div>
+
+          <!-- Success -->
+          <div class="swiper-slide">
+            <div class="overVideo">
+              <h2>Bingo!</h2>
+              <p>Your dog ain't dumb. He'll figure out that your hand stays open when he leans back. And once he does, bam! Reward him right away with the other hand. Even if it was just for an instant, give him some of that deliciousness. Om nom nom.</p>
             </div>
-            <div class="swiper-slide slide-four">
-              <div class="overVideo">
-                <span>WATER WATER WATER</span>
-              </div>
-              <video src="images/vid.mov" autoplay loop muted playsinline preload></video>
+            <video src="images/success.mov" autoplay loop muted playsinline preload></video>
+          </div>
+          
+          <!-- Water -->
+          <div class="swiper-slide">
+            <div class="overVideo">
+              <h2>WATER WATER WATER</h2>
             </div>
+            <video src="images/vid.mov" autoplay loop muted playsinline preload></video>
+          </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
