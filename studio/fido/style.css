@@ -88,13 +88,13 @@ body {
   position: relative;
   color: black;
 }
-.swiper-pagination-progress {
+/*.swiper-pagination-progress {
   background: rgba(0,0,0,.1);
 }
 .swiper-pagination-progress .swiper-pagination-progressbar {
   background: rgba(0,0,0,.5);
 }
-
+*/
 /* Style */
 h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
