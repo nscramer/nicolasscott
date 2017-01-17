@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fido • Impulse Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-title" content="Fido">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+    <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="lity.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="goBack" href="../">Go back</a>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          
+          <!-- Title -->
+          <div class="swiper-slide lesson-title-slide">
+            <div style="position: relative; z-index: 2;">
+              <h1>Impulse Control</h1>
+              <a class="videoPlayButton" href="https://vimeo.com/199152988?autoplay=1" data-lity>Play</a>
+            </div>
+            <div class="scrim"></div>
+          </div>
+
+          <!-- Gear -->
+          <div class="swiper-slide">
+            <div class="fullBleedOverlay"></div>
+            <video src="images/gear.mov" autoplay loop muted playsinline preload></video>
+          </div>
+          
+          <!-- Fistful -->
+          <div class="swiper-slide">
+            <div class="overVideo">
+              <h2>Fistful of deliciousness</h2>
+              <p>Grab a handful of food. Hold it tightly in your fist so he can smell it but can't get it.</p>
+            </div>
+            <video src="images/fistful.mov" autoplay loop muted playsinline preload></video>
+          </div>
+          
+          <!-- Setup -->
+          <div class="swiper-slide">
+            <div class="overVideo">
+              <h2>Set up steady</h2>
+              <p>Sit on the floor or in a chair. Hold your fist palm up, keeping your arm steady so it doesn't become something to chase.</p>
+            </div>
+            <img src="images/setup.jpg">
+          </div>
+
+          <!-- Attack -->
+          <div class="swiper-slide">
+            <div class="overVideo">
+              <h2>Attack of the hungry puppy</h2>
+              <p>Your dog will smell the food and start to go after your hand. Keep still and let him sniff, lick, and nudge.</p>
+            </div>
+            <video src="images/attack.mov" autoplay loop muted playsinline preload></video>
+          </div>
+
+          <!-- Nope -->
+          <div class="swiper-slide">
+            <div class="overVideo">
+              <h2>An opportunity emerges</h2>
+              <p>When he pauses his attack, open up your hand. When he rushes back, close it again before he gets a taste. Rinse and repeat.</p>
+            </div>
+            <video src="images/nope.mov" autoplay loop muted playsinline preload></video>
+          </div>
+
+          <!-- Success -->
+          <div class="swiper-slide">
+            <div class="overVideo">
+              <h2>Bingo!</h2>
+              <p>He'll figure out that your hand stays open as he leans back. When he does, reward him right away <strong>with the other hand</strong>. Give him a piece of that deliciousness.</p>
+            </div>
+            <video src="images/success.mov" autoplay loop muted playsinline preload></video>
+          </div>
+          
+          <!-- Continue -->
+          <div class="swiper-slide">
+            <div class="overVideo">
+              <h2>Finish strong</h2>
+              <p>After about <strong>5 minutes</strong> of this, look for a great rep to end on. When he nails it, reward him with the rest of his meal in the usual bowl or kong. That's it!</p>
+            </div>
+            <video src="images/continue.mov" autoplay loop muted playsinline preload></video>
+          </div>
+          
+          <!-- Start -->
+          <div class="swiper-slide start-session-slide">
+            <h2>Start the session!</h2>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+      
+    <!-- Lity JS -->
+    <script src="lity.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationType: 'progress'
+    });
+    </script>
+</body>
+</html>

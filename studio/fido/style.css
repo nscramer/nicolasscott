@@ -50,12 +50,17 @@ body {
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  line-height: 125%;
+  line-height: 140%;
   color: white;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+img {
+  width: 100%;
+  align: text-top;
 }
 
 /* Swiper */
@@ -66,20 +71,6 @@ body {
 .swiper-slide {
   text-align: center;
   background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 
   /* Me, not the demo */
   background-repeat: no-repeat;
@@ -101,7 +92,7 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1;
 }
 
-h1 { font-size: 3rem; }
+h1 { font-size: 2.5rem; }
 h2 { font-size: 1.5rem; }
 
 .swiper-slide video {
@@ -131,7 +122,7 @@ h2 { font-size: 1.5rem; }
 
 .fullBleedOverlay {
   position: absolute;
-  top: 0;
+  top: 2rem;
   right: 0;
   bottom: 0;
   left: 0;
@@ -140,4 +131,97 @@ h2 { font-size: 1.5rem; }
   background-size: contain;
   background-position: top left;
   z-index: 4;
+}
+
+.lesson-title-slide {
+  text-align: center;
+  background-image: url("images/lesson.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  color: white;
+  padding: 14rem 1rem 1rem 1rem;
+}
+
+.videoPlayButton {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  z-index: 5;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-image: url("images/play.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-tap-highlight-color: transparent;
+  margin-top: 1rem;
+}
+
+.scrim {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.goBack {
+  position: absolute;
+  top: 1rem;
+  left: .5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 5;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-image: url("images/back-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 1.25rem 1rem;
+  background-position: center center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.start-session-slide {
+  background-color: black;
+  color: white;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* Start Page */
+body.startPage {
+  background-image: url("images/ui.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+body.startPage a {
+  display: block;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  right: 10%;
+  padding: 1.25rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #FFC268;
+  -webkit-tap-highlight-color: transparent;
 }
