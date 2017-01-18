@@ -244,7 +244,7 @@ h2 { font-size: 1.5rem; }
 
 /* Start Page */
 body.startPage {
-  background-image: url("images/ui.jpg");
+  background-image: url("images/ui.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
