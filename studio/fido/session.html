@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="goBack" href="../">Go back</a>
+
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -92,8 +92,12 @@
             <h2>Start the session!</h2>
           </div>
         </div>
+
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 
     <!-- jQuery -->
@@ -109,7 +113,9 @@
     <script>
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
-        paginationType: 'progress'
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
     });
     </script>
 </body>

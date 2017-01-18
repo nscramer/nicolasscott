@@ -168,10 +168,32 @@ h2 { font-size: 1.5rem; }
   z-index: 1;
 }
 
-.goBack {
+.swiper-pagination {
+  bottom: auto;
+  top: .65rem;
+  z-index: 4;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(0,0,0,0.5);
+}
+
+.swiper-pagination-bullet-active {
+  background: #FFC268;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
+  margin: 0 .75rem;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+  bottom: auto;
+}
+
+.swiper-button-prev {
   position: absolute;
-  top: 1rem;
-  left: .5rem;
+  top: 1.5rem;
+  left: 0;
   width: 2.5rem;
   height: 2.5rem;
   z-index: 5;
@@ -182,6 +204,23 @@ h2 { font-size: 1.5rem; }
   background-size: 1.25rem 1rem;
   background-position: center center;
   -webkit-tap-highlight-color: transparent;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 1.5rem;
+  right: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 5;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-image: url("images/back-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 1.25rem 1rem;
+  background-position: center center;
+  -webkit-tap-highlight-color: transparent;
+  transform:scaleX(-1);
 }
 
 .start-session-slide {
