@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="36px" viewBox="0 0 16 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Right Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-7" transform="translate(-21.000000, -12.000000)" fill="#FFFFFF">
+            <path d="M36.6463467,28.973697 L23.6863297,12.576197 C23.150161,11.896697 22.1911255,11.804697 21.5473438,12.372197 C20.9021399,12.940697 20.8149118,13.948197 21.3520286,14.628197 L33.5018668,30.000197 L21.3520286,45.371197 C20.8158599,46.052697 20.9030881,47.060697 21.5473438,47.628197 C22.1906514,48.195697 23.150161,48.103697 23.6863297,47.424197 L36.6463467,31.027697 C36.8824316,30.729697 37,30.364697 37,30.000197 C37,29.635197 36.8824316,29.270697 36.6463467,28.973697 L36.6463467,28.973697 Z" id="Right-Arrow" transform="translate(29.000000, 30.000197) scale(-1, 1) translate(-29.000000, -30.000197) "></path>
+        </g>
+    </g>
+</svg>
