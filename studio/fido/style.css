@@ -102,6 +102,11 @@ h2 {
   color: rgba(90,72,59,0.5);
 }
 
+h3 {
+  font-size: 1.375rem;
+  line-height: 1.375;
+}
+
 
 .backLink {
   width: .625rem;
@@ -155,7 +160,7 @@ h2 {
 }
 
 .bottom {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
@@ -168,13 +173,18 @@ h2 {
 
 .btn {
   display: block;
+  width: 100%;
   padding: 1rem;
   color: white;
   font-weight: 700;
   text-align: center;
+  border: 0;
+  font-size: 1rem;
   border-radius: .5rem;
   background-color: #C6ED2E;
   box-shadow: 0 1px 3px rgba(90,72,61,.2);
+  -webkit-appearance: none;
+  user-select: none;
 }
 
 nav {
@@ -379,11 +389,11 @@ nav .helpLink {
 
 /* Session Detail */
 
-.session hgroup {
+hgroup {
   margin-bottom: 1.5rem;
 }
 
-.session hgroup h2 {
+hgroup h2 {
   margin-bottom: .5rem;
 }
 
@@ -433,15 +443,88 @@ nav .helpLink {
 }
 
 
+/* Prompt Slides */
+.prompt-slide {
+}
 
+.prompt-slide hgroup {
+  margin: 8rem 0 1.5rem 0;
+}
 
+h1 strong, 
+h2 strong,
+h3 strong {
+  color: #FF5F2B;
+}
 
+.ranking-slide h3 strong {
+  color: #C6ED2E;
+}
 
+.progressBar,
+.progressBarProgress {
+  height: 1rem;
+  border-radius: 99999px;
+}
 
+.progressBar {
+  background-color: #D8D8D8;
+}
 
+.progressBarProgress {
+  background-color: #C6ED2E;
+  border-radius: 99999px 0 0 99999px;
+}
 
+.progressBarLabel {
+  display: block;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375;
+  color: rgba(90,72,59,0.5);
+  margin-bottom: .5rem;
+}
 
+.progressBarLabel--ending {
+  float: right;
+}
 
+.formInputGroup {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/* Feedback Form */
+.formInputBlock {
+  margin: 3rem 0 0 0;
+  padding: .25rem 0;
+  font-family: "circular", sans-serif;
+  font-size: 1rem;
+  line-height: 137.5%;
+  border: 0;
+  border-bottom: 1px solid #E5E3D9;
+  background-color: transparent;
+  color: #5A483D;
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-appearance: none;
+  border-radius: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.formInputBlock:hover,
+.formInputBlock:focus,
+.formInputBlock:active {
+  outline: none;
+  border-bottom-color: #5A483D;
+}
+
+#rateYo {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+}
 
 
 /* Swiper */
@@ -450,24 +533,23 @@ nav .helpLink {
   height: 100%;
 }
 .swiper-slide {
-  text-align: center;
-  background: #fff;
 
   /* Me, not the demo */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   position: relative;
-  color: black;
 }
-/*.swiper-pagination-progress {
-  background: rgba(0,0,0,.1);
+
+.technique-slide {
+  background-color: #5A483D;
+  color: #F9F9F0;
+}
+
+.swiper-pagination-progress {
 }
 .swiper-pagination-progress .swiper-pagination-progressbar {
-  background: rgba(0,0,0,.5);
 }
-*/
-
 
 .swiper-slide video {
   position: absolute;
@@ -489,9 +571,10 @@ nav .helpLink {
   color: white;
 }
 
-.overVideo h2 {
+.overVideo h3 {
   margin-bottom: .5rem;
   text-align: center;
+  color: white;
 }
 
 .fullBleedOverlay {
@@ -582,21 +665,28 @@ nav .helpLink {
   transform:scaleX(-1);
 }
 
-.start-session-slide {
+.timer-slide {
   background-color: black;
-  color: white;
+  color: #FFFFF6;
+  text-align: center;
+  padding: 12rem 5rem 0 5rem;
+}
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+.timer {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.timer-reminder {
+  color: rgba(255,255,246,0.5);
+}
+
+.timer-slide .stuckBottomButtonWrap {
+  background: none;
+}
+
+.timer-slide .btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,240,0.33 );
 }
