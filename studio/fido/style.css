@@ -64,6 +64,22 @@ img {
   align: text-top;
 }
 
+.u-clearfix {
+  zoom:1;
+}
+
+.u-clearfix:before,
+.u-clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.u-clearfix:after {
+  clear: both;
+}
+
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
@@ -82,12 +98,42 @@ h1 {
 h2 {
   font-weight: 400;
   font-size: 0.875rem;
+  line-height: 1.375;
+  color: rgba(90,72,59,0.5);
+}
+
+
+.backLink {
+  width: .625rem;
+  height: 1.25rem;
+  display: block;
+  background-image: url("images/left-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+
+.backLink,
+.nextLink {
+  width: .5rem;
+  height: 1rem;
+  display: block;
+  background-image: url("images/left-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+
+.nextLink {
+  transform:scaleX(-1);
 }
 
 .helpLink {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  display: block;
 }
 
 .helpLink:before {
@@ -102,6 +148,47 @@ h2 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
+}
+
+.wrap {
+  padding: 1.5rem;
+}
+
+.bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.stuckBottomButtonWrap {
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  background-image: linear-gradient(rgba(249,249,240,0) 0%, rgba(249,249,240,0.9) 30%);
+}
+
+.btn {
+  display: block;
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  border-radius: .5rem;
+  background-color: #C6ED2E;
+  box-shadow: 0 1px 3px rgba(90,72,61,.2);
+}
+
+nav {
+  padding-bottom: 1.5rem;
+}
+
+nav .closeLink,
+nav .backLink {
+  float: left;
+
+}
+nav .helpLink {
+  float: right;
+  margin-top: -.25rem;
 }
 
 
@@ -133,7 +220,6 @@ h2 {
 }
 
 .hero hgroup {
-  color: #FFFFF6;
   z-index: 2;
   position: absolute;
   right: 1.5rem;
@@ -144,10 +230,12 @@ h2 {
 .hero h1 {
   padding-right: 5rem;
   margin-bottom: .5rem;
+  color: #FFFFF6;
 }
 
 .hero h2 {
   text-indent: .25rem;
+  color: #FFFFF6;
 }
 
 .videoPlayButton {
@@ -164,19 +252,27 @@ h2 {
   -webkit-tap-highlight-color: transparent;
 }
 
+.lesson .videoPlayButton {
+  position: relative;
+  z-index: 2;
+}
+
 .lesson .helpLink {
   color: white;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 .lesson .helpLink:before {
   background-image: url("images/help-white.svg");
 }
 
-.tileListWrap {
+.listWrap {
   padding: 1.5rem;
 }
 
-.tileListWrap h2 {
+.listWrap h2 {
   color: #ACA399;
   margin-bottom: .75rem;
 }
@@ -199,7 +295,7 @@ h2 {
   padding: 1rem;
 }
 
-.sessionDetail {
+.sessionInfo {
   padding-right: 3.25rem;
 }
 
@@ -280,6 +376,71 @@ h2 {
   background-size: contain;
   background-position: center center;
 }
+
+/* Session Detail */
+
+.session hgroup {
+  margin-bottom: 1.5rem;
+}
+
+.session hgroup h2 {
+  margin-bottom: .5rem;
+}
+
+.sessionDetailList {
+  list-style: none;
+}
+
+.sessionDetail {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #E5E3D9;
+  position: relative;
+}
+
+.sessionDetail:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 3rem;
+  height: 2rem;
+  margin-top: -1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.sessionDetail:first-child {
+  border-top: 1px solid #E5E3D9;
+}
+
+.sessionDetail.session-five-minutes:after {
+  background-image: url("images/session-five-minutes.svg");
+  height: 1.75rem;
+  margin-top: -0.875rem;
+}
+
+.sessionDetail.session-indoors:after {
+  background-image: url("images/session-indoors.svg");
+}
+
+.sessionDetail.session-food-treats:after {
+  background-image: url("images/session-food-treats.svg");
+}
+
+.sessionDetail.session-distractions:after {
+  background-image: url("images/session-distractions.svg");
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

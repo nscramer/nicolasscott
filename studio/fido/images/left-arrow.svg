@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="32px" viewBox="0 0 16 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Right Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Session-Cover" transform="translate(-48.000000, -77.000000)" fill="#5A483D">
+            <path d="M63.6463467,92.0875655 L50.6863297,77.5121695 C50.150161,76.9081762 49.1911255,76.8263993 48.5473438,77.3308382 C47.9021399,77.836166 47.8149118,78.7317117 48.3520286,79.3361496 L60.5018668,93 L48.3520286,106.662962 C47.8158599,107.268733 47.9030881,108.164723 48.5473438,108.669162 C49.1906514,109.173601 50.150161,109.091824 50.6863297,108.48783 L63.6463467,93.9133233 C63.8824316,93.6484373 64,93.3239965 64,93 C64,92.6755591 63.8824316,92.3515627 63.6463467,92.0875655 L63.6463467,92.0875655 Z" id="Right-Arrow" transform="translate(56.000000, 93.000000) scale(-1, 1) translate(-56.000000, -93.000000) "></path>
+        </g>
+    </g>
+</svg>
