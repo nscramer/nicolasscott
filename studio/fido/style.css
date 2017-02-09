@@ -235,6 +235,7 @@ nav .helpLink {
   right: 1.5rem;
   bottom: 1.5rem;
   left: 1.5rem;
+  margin-bottom: 0;
 }
 
 .hero h1 {
@@ -420,6 +421,10 @@ hgroup h2 {
   background-position: center center;
 }
 
+.sessionDetail--off:after {
+  opacity: .125;
+}
+
 .sessionDetail:first-child {
   border-top: 1px solid #E5E3D9;
 }
@@ -448,7 +453,7 @@ hgroup h2 {
 }
 
 .prompt-slide hgroup {
-  margin: 8rem 0 1.5rem 0;
+  margin: 3rem 0 1.5rem 0;
 }
 
 h1 strong, 
