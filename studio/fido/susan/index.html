@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fido | The Puzzle of the Tasty Fist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-title" content="Fido">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/apple-touch-icon-152x152.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../lity.min.css">
+</head>
+<body id="lesson" class="s0">
+  <header class="hero">
+    <hgroup>
+      <h1>The Puzzle of the Tasty Fist</h1>
+      <h2>Impulse Control&nbsp;&sdot;&nbsp;Beginner&nbsp;&sdot;&nbsp;Five sessions</h2>
+    </hgroup>
+    <a class="videoPlayButton" href="#">Watch video</a>
+    <a class="helpLink" href="sms:513-435-2480">Help</a>
+  </header>
+  <section class="listWrap">
+    <h2>Training Sessions</h2>
+    <ul class="tileList">
+      
+      <!-- Session One -->
+      <li>
+        <a id="s1" class="tile" href="session1/">
+          <span class="sessionStatus"></span>
+          <div class="sessionInfo">
+            <h3 class="sessionTitle">My human is a stubborn one</h3>
+            <p class="sessionLede">With food in hand and some patience, we’ll start teaching impulse control.</p>
+          </div>
+          <span>
+        </a>
+      </li>
+      
+      <!-- Session Two -->
+      <li>
+        <a id="s2" class="tile" href="session2/">
+          <span class="sessionStatus"></span>
+          <div class="sessionInfo">
+            <h3 class="sessionTitle">A twist: they’re on the floor</h3>
+            <p class="sessionLede">Showing progress, we move the food from in hand to the floor and press on.</p>
+          </div>
+          <span>
+        </a>
+      </li>
+      
+      <!-- Theory Video -->
+      <li>
+        <a id="s3" class="tile session-theory-video" href="#">
+          <span class="sessionStatus"></span>
+          <div class="sessionInfo">
+            <h3 class="sessionTitle">Premack Principle</h3>
+          </div>
+          <span>
+        </a>
+      </li>
+      
+      <li>
+        <a id="s4" class="tile" href="session3/">
+          <span class="sessionStatus"></span>
+          <div class="sessionInfo">
+            <h3 class="sessionTitle">Is he, is he paying attention?</h3>
+            <p class="sessionLede">Now we move ourselves farther away from the stash and test his control.</p>
+          </div>
+          <span>
+        </a>
+      </li>
+      
+      <li>
+        <a id="s5" class="tile" href="session4/">
+          <span class="sessionStatus"></span>
+          <div class="sessionInfo">
+            <h3 class="sessionTitle">I can almost touch them!</h3>
+            <p class="sessionLede">Move the stash closer to his paws to forge his resolve before the big test.</p>
+          </div>
+          <span>
+        </a>
+      </li>
+      
+      <li>
+        <a id="s6" class="tile" href="session5/">
+          <span class="sessionStatus"></span>
+          <div class="sessionInfo">
+            <h3 class="sessionTitle">Final Boss: It’s…on my paw</h3>
+            <p class="sessionLede">Timer running, we place treats on his paw for this final showdown.</p>
+          </div>
+          <span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+    <script>
+    window.onload = function(){
+      setProgress();
+      goToOnboarding();
+    }
+    // Values can be retrieved from storage using Storage.getItem()
+    function setProgress() {
+      var bodyElem = document.querySelector('body');
+
+      if(!localStorage.getItem('lessonProgress')) {
+    
+      } else {
+        var bodyElem = document.querySelector('body');
+        var currentProgress = localStorage.getItem('lessonProgress');
+        bodyElem.className = currentProgress;
+      }
+      displayProgress();
+    }
+
+    function displayProgress () {
+
+      if(document.querySelector('body').classList.contains('s0')) {
+        document.getElementById('s1').className += " session-next";
+        document.getElementById('s2').className += " session-locked";
+        document.getElementById('s3').className += " session-locked";
+        document.getElementById('s4').className += " session-locked";
+        document.getElementById('s5').className += " session-locked";
+        document.getElementById('s6').className += " session-locked";
+    
+      } else if(document.querySelector('body').classList.contains('s1')) {
+        document.getElementById('s1').className = "tile session-completed";
+        document.getElementById('s2').className = "tile session-next";
+        document.getElementById('s3').className += " session-locked";
+        document.getElementById('s4').className += " session-locked";
+        document.getElementById('s5').className += " session-locked";
+        document.getElementById('s6').className += " session-locked";
+    
+      } else if(document.querySelector('body').classList.contains('s2')) {
+        document.getElementById('s1').className = "tile session-completed";
+        document.getElementById('s2').className = "tile session-completed";
+        document.getElementById('s3').className = "tile session-next";
+        document.getElementById('s4').className = "tile session-locked";
+        document.getElementById('s5').className = "tile session-locked";
+        document.getElementById('s6').className = "tile session-locked";
+
+      } else if(document.querySelector('body').classList.contains('s3')) {
+        document.getElementById('s1').className = "tile session-completed";
+        document.getElementById('s2').className = "tile session-completed";
+        document.getElementById('s3').className = "tile session-completed";
+        document.getElementById('s4').className = "tile session-next";
+        document.getElementById('s5').className = "tile session-locked";
+        document.getElementById('s6').className = "tile session-locked";
+    
+      } else if(document.querySelector('body').classList.contains('s4')) {
+        document.getElementById('s1').className = "tile session-completed";
+        document.getElementById('s2').className = "tile session-completed";
+        document.getElementById('s3').className = "tile session-completed";
+        document.getElementById('s4').className = "tile session-completed";
+        document.getElementById('s5').className = "tile session-next";
+        document.getElementById('s6').className = "tile session-locked";
+    
+      } else if(document.querySelector('body').classList.contains('s5')) {
+        document.getElementById('s1').className = "tile session-completed";
+        document.getElementById('s2').className = "tile session-completed";
+        document.getElementById('s3').className = "tile session-completed";
+        document.getElementById('s4').className = "tile session-completed";
+        document.getElementById('s5').className = "tile session-completed";
+        document.getElementById('s6').className = "tile session-next";
+
+      } else if(document.querySelector('body').classList.contains('s6')) {
+        document.getElementById('s1').className = "tile session-completed";
+        document.getElementById('s2').className = "tile session-completed";
+        document.getElementById('s3').className = "tile session-completed";
+        document.getElementById('s4').className = "tile session-completed";
+        document.getElementById('s5').className = "tile session-completed";
+        document.getElementById('s6').className = "tile session-completed";  
+
+      } else {
+        document.getElementById('s1').className += "tile";
+        document.getElementById('s2').className += "tile";
+        document.getElementById('s3').className += "tile";
+        document.getElementById('s4').className += "tile";
+        document.getElementById('s5').className += "tile";
+        document.getElementById('s6').className += "tile";
+      }
+    }
+    
+    function goToOnboarding() {
+      if(localStorage.getItem('lessonProgress') == null) {
+        window.location='new/';
+      } else {
+      }
+    }
+    </script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+    
+  <!-- Lity JS -->
+  <script src="../lity.min.js"></script>
+</body>
+</html>

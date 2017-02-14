@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fido • Impulse Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-title" content="Fido">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/apple-touch-icon-152x152.png">
+    <link rel="stylesheet" href="../../bower_components/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../lity.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.css">
+</head>
+<body>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <!-- Welcome -->
+          <div class="swiper-slide technique-slide">
+            <div class="overVideo">
+              <h3>Welcome</h3>
+              <p>Everyone we've ever met who has a dog wants them to be better trained. Well-behaved dogs are safer, more confident, happier, and easier for anyone to be around.</p>
+            </div>
+          </div>
+
+          <!-- Two -->
+          <div class="swiper-slide technique-slide">
+            <div class="overVideo">
+              <p>But until now, our only options were years behind the products we use in the rest of our lives. That makes it tough for most of us to stick it out long enough to see the results we want.</p>
+            </div>
+          </div>
+
+          <!-- Three -->
+          <div class="swiper-slide technique-slide">
+            <div class="overVideo">
+              <p>So we thought, what if we tried designing a dog training system from scratch, that's as simple and fun for people like us as it is useful and productive for our dogs?</p>
+            </div>
+          </div>
+          
+          <!-- Four -->
+          <div class="swiper-slide technique-slide">
+            <div class="overVideo">
+              <p>This is a prototype lesson from an app we might call Fido. It's designed around habit: a few, short, fun bursts of training on most days. It's based on research from canine behaviorists and human behavioral designers. </p>
+            </div>
+          </div>
+          
+          <!-- Four -->
+          <div class="swiper-slide technique-slide">
+            <div class="overVideo">
+              <p>We're going to experiment using Fido for a few days. This prototype requires as little as 7 minutes, twice a day, for 3 days. Can you make that time for your dog?</p>
+              <a class="btn" href="../" onclick="setLocalUserName();">Let&rsquo;s get after it</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- Add Arrows -->
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="../../bower_components/swiper/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        // pagination: '.swiper-pagination',
+        // paginationClickable: true,
+        nextButton: '.swiper-button-next, .js-swiper-next'
+        // prevButton: '.swiper-button-prev'
+    });
+    </script>
+    
+    <script>
+      // THIS IS WHERE I MANUALLY SET THE USER NAME FOR EACH PERSON
+      function setLocalUserName() {
+        localStorage.setItem('localUserName', 'Susan');
+        localStorage.setItem('lessonProgress', 's0');
+      }
+    </script>
+
+</body>
+</html>

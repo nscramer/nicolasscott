@@ -263,19 +263,19 @@ nav .helpLink {
   -webkit-tap-highlight-color: transparent;
 }
 
-.lesson .videoPlayButton {
+#lesson .videoPlayButton {
   position: relative;
   z-index: 2;
 }
 
-.lesson .helpLink {
+#lesson .helpLink {
   color: white;
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
 }
 
-.lesson .helpLink:before {
+#lesson .helpLink:before {
   background-image: url("images/help-white.svg");
 }
 
@@ -474,6 +474,7 @@ h3 strong {
 
 .progressBar {
   background-color: #D8D8D8;
+  overflow: hidden;
 }
 
 .progressBarProgress {
@@ -595,7 +596,7 @@ h3 strong {
   z-index: 4;
 }
 
-.lesson-title-slide {
+#lesson-title-slide {
   text-align: center;
   background-image: url("images/lesson.jpg");
   background-repeat: no-repeat;
