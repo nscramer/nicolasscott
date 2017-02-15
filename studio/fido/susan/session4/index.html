@@ -113,7 +113,7 @@
                 <p>If you need a reminder, you can always swipe right to see the tips and techniques.</p>
               </header>
               <div class="bottom stuckBottomButtonWrap">
-                <a class="btn js-swiper-next">Let&rsquo;s play</a>
+                <a class="btn js-swiper-next js-startTimer">Let&rsquo;s play</a>
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@
             <h1 class="timer js-timer"><span id="minutes">00</span>:<span id="seconds">00</span></h1>
             <p class="timer-reminder">Don’t forget to finish strong and end on a good rep.</p>
             <div class="bottom stuckBottomButtonWrap">
-              <a class="btn js-swiper-next" href="#" onclick="updateLessonProgress();">We&rsquo;re done</a>
+              <a class="btn js-swiper-next js-stopTimer" href="#" onclick="updateLessonProgress();">We&rsquo;re done</a>
             </div>
           </div>
 
@@ -223,29 +223,44 @@
       
     <!-- Timer -->
     <script>
-      var minutesLabel = document.getElementById("minutes");
-      var secondsLabel = document.getElementById("seconds");
-      var totalSeconds = 0;
-      setInterval(setTime, 1000);
+      window.onload = startTimer;
 
-      function setTime()
-      {
-          ++totalSeconds;
-          secondsLabel.innerHTML = pad(totalSeconds%60);
-          minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
+      function startTimer() {
+        var startTimerButton = document.querySelector(".js-startTimer");
+        startTimerButton.onclick = runTimer;
       }
+      
+      function runTimer() {
+        var minutesLabel = document.getElementById("minutes");
+        var secondsLabel = document.getElementById("seconds");
+        var totalSeconds = 0;
+        var timerInterval = setInterval(setTime, 1000);
+        
+        var stopTimerButton = document.querySelector(".js-stopTimer");
+        
+        stopTimerButton.onclick = function () {
+          clearInterval(timerInterval);
+        }
 
-      function pad(val)
-      {
-          var valString = val + "";
-          if(valString.length < 2)
-          {
-              return "0" + valString;
-          }
-          else
-          {
-              return valString;
-          }
+        function setTime()
+        {
+            ++totalSeconds;
+            secondsLabel.innerHTML = pad(totalSeconds%60);
+            minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
+        }
+
+        function pad(val)
+        {
+            var valString = val + "";
+            if(valString.length < 2)
+            {
+                return "0" + valString;
+            }
+            else
+            {
+                return valString;
+            }
+        }
       }
     </script>
     
