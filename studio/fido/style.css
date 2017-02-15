@@ -480,6 +480,8 @@ h3 strong {
 .progressBarProgress {
   background-color: #C6ED2E;
   border-radius: 99999px 0 0 99999px;
+  transition: width 1s;
+  transition-delay: .5s;
 }
 
 .progressBarLabel {
