@@ -17,6 +17,12 @@
 
     <!-- Swiper -->
     <div class="swiper-container">
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
         <div class="swiper-wrapper">
 
           <!-- Session Detail -->
@@ -127,7 +133,7 @@
               <header>
                 <nav class="u-clearfix">
                   <a class="helpLink" href="sms:513-435-2480">Help</a>
-                  <a class="backLink" href="../">Back</a>
+                  <a class="backLink js-swiper-prev" href="#">Back</a>
                 </nav>
                 <hgroup>
                   <h2>It&rsquo;s go time</h2>
@@ -154,7 +160,6 @@
               <header>
                 <nav class="u-clearfix">
                   <a class="helpLink" href="sms:513-435-2480">Help</a>
-                  <a class="backLink" href="../">Back</a>
                 </nav>
                 <hgroup>
                   <h2>&nbsp;</h2>
@@ -190,12 +195,6 @@
           </div>
 
         </div>
-
-        <!-- Add Pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
-        <!-- Add Arrows -->
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
     </div>
 
     <!-- jQuery -->
@@ -216,10 +215,23 @@
     <!-- Initialize Swiper -->
     <script>
     var swiper = new Swiper('.swiper-container', {
-        // pagination: '.swiper-pagination',
-        // paginationClickable: true,
-        nextButton: '.swiper-button-next, .js-swiper-next'
-        // prevButton: '.swiper-button-prev'
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      nextButton: '.swiper-button-next, .js-swiper-next',
+      prevButton: '.swiper-button-prev, .js-swiper-prev',
+      
+      onSlideChangeStart:function(swipe){
+        if(swipe.activeIndex > 0 && swipe.activeIndex < 8) {
+          document.querySelector(".swiper-button-next").style.display = "block";
+          document.querySelector(".swiper-button-prev").style.display = "block";
+          document.querySelector(".swiper-pagination").style.display = "block";
+        } else {
+          document.querySelector(".swiper-button-next").style.display = "none";
+          document.querySelector(".swiper-button-prev").style.display = "none";
+          document.querySelector(".swiper-pagination").style.display = "none";
+        }
+
+      }
     });
     </script>
     

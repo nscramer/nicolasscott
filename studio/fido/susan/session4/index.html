@@ -17,6 +17,11 @@
 
     <!-- Swiper -->
     <div class="swiper-container">
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
         <div class="swiper-wrapper">
 
           <!-- Session Detail -->
@@ -116,7 +121,7 @@
               <header>
                 <nav class="u-clearfix">
                   <a class="helpLink" href="sms:513-435-2480">Help</a>
-                  <a class="backLink" href="../">Back</a>
+                  <a class="backLink js-swiper-prev" href="#">Back</a>
                 </nav>
                 <hgroup>
                   <h2>It&rsquo;s go time</h2>
@@ -135,7 +140,7 @@
             <h1 class="timer js-timer"><span id="minutes">00</span>:<span id="seconds">00</span></h1>
             <p class="timer-reminder">Don’t forget to finish strong and end on a good rep.</p>
             <div class="bottom stuckBottomButtonWrap">
-              <a class="btn js-swiper-next js-stopTimer" href="#" onclick="updateLessonProgress();">We&rsquo;re done</a>
+              <a class="btn js-swiper-next js-stopTimer" href="#">We&rsquo;re done</a>
             </div>
           </div>
 
@@ -145,7 +150,6 @@
               <header>
                 <nav class="u-clearfix">
                   <a class="helpLink" href="sms:513-435-2480">Help</a>
-                  <a class="backLink" href="../">Back</a>
                 </nav>
                 <hgroup>
                   <h2>&nbsp;</h2>
@@ -181,12 +185,6 @@
           </div>
 
         </div>
-
-        <!-- Add Pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
-        <!-- Add Arrows -->
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
     </div>
 
     <!-- jQuery -->
@@ -207,10 +205,23 @@
     <!-- Initialize Swiper -->
     <script>
     var swiper = new Swiper('.swiper-container', {
-        // pagination: '.swiper-pagination',
-        // paginationClickable: true,
-        nextButton: '.swiper-button-next, .js-swiper-next'
-        // prevButton: '.swiper-button-prev'
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      nextButton: '.swiper-button-next, .js-swiper-next',
+      prevButton: '.swiper-button-prev, .js-swiper-prev',
+      
+      onSlideChangeStart:function(swipe){
+        if(swipe.activeIndex > 0 && swipe.activeIndex < 7) {
+          document.querySelector(".swiper-button-next").style.display = "block";
+          document.querySelector(".swiper-button-prev").style.display = "block";
+          document.querySelector(".swiper-pagination").style.display = "block";
+        } else {
+          document.querySelector(".swiper-button-next").style.display = "none";
+          document.querySelector(".swiper-button-prev").style.display = "none";
+          document.querySelector(".swiper-pagination").style.display = "none";
+        }
+
+      }
     });
     </script>
     
@@ -255,7 +266,7 @@
           clearInterval(timerInterval);
           var timerWrapper = document.querySelector(".js-timer");
           var sessionTime = minutesLabel.innerHTML + ":" + secondsLabel.innerHTML
-          
+          localStorage.setItem('lessonProgress', 's4');
           document.getElementById("Field9").value = sessionTime;
         }
 
@@ -278,12 +289,6 @@
                 return valString;
             }
         }
-      }
-    </script>
-    
-    <script>
-      function updateLessonProgress() {
-        localStorage.setItem('lessonProgress', 's4');
       }
     </script>
 </body>

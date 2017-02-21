@@ -114,16 +114,20 @@ h3 {
 }
 
 
-.backLink {
-  width: .625rem;
-  height: 1.25rem;
-  display: block;
-  background-image: url("images/left-arrow.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  text-indent: -99999px;
-  overflow: hidden;
+.backLink,
+.backLink.swiper-button-prev {
+  width: .625rem !important;
+  height: 1.25rem !important;
+  display: block !important;
+  background-image: url("images/left-arrow.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center center !important;
+  text-indent: -99999px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  top: default !important;
+  left: default !important;
 }
 
 .backLink,
@@ -551,7 +555,6 @@ h3 strong {
   height: 100%;
 }
 .swiper-slide {
-
   /* Me, not the demo */
   background-repeat: no-repeat;
   background-size: cover;
@@ -564,9 +567,10 @@ h3 strong {
   color: #F9F9F0;
 }
 
-.swiper-pagination-progress {
-}
-.swiper-pagination-progress .swiper-pagination-progressbar {
+.swiper-pagination,
+.swiper-button-next,
+.swiper-button-prev {
+  display: none; /* To Start */
 }
 
 .swiper-slide video {
@@ -630,12 +634,12 @@ h3 strong {
 
 .swiper-pagination {
   bottom: auto;
-  top: .65rem;
+  top: 1.25rem;
   z-index: 4;
 }
 
 .swiper-pagination-bullet {
-  background: rgba(0,0,0,0.5);
+  background: rgba(255,255,255,0.95);
 }
 
 .swiper-pagination-bullet-active {
@@ -643,43 +647,36 @@ h3 strong {
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
-  margin: 0 .75rem;
+  margin: 0 .5rem;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets {
   bottom: auto;
 }
 
-.swiper-button-prev {
+
+.swiper-button-prev,
+.swiper-button-next {
   position: absolute;
-  top: 1.5rem;
-  left: 0;
-  width: 2.5rem;
-  height: 2.5rem;
+  top: 2.75rem;
+  width: .625rem;
+  height: 1.25rem;
   z-index: 5;
   text-indent: -99999px;
   overflow: hidden;
   background-image: url("images/back-arrow.svg");
   background-repeat: no-repeat;
-  background-size: 1.25rem 1rem;
+  background-size: contain;
   background-position: center center;
   -webkit-tap-highlight-color: transparent;
+  
+}
+.swiper-button-prev {
+  left: 1.5rem;
 }
 
 .swiper-button-next {
-  position: absolute;
-  top: 1.5rem;
-  right: 0;
-  width: 2.5rem;
-  height: 2.5rem;
-  z-index: 5;
-  text-indent: -99999px;
-  overflow: hidden;
-  background-image: url("images/back-arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 1.25rem 1rem;
-  background-position: center center;
-  -webkit-tap-highlight-color: transparent;
+  right: 1.5rem;
   transform:scaleX(-1);
 }
 
@@ -710,13 +707,12 @@ h3 strong {
 }
 
 .inlineVideoCover {
-  height: 50vw;
+  height: 66vw;
   position: relative;
   background-color: #ACA399;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -738,6 +734,14 @@ h3 strong {
   z-index: 2;
 }
 
+.prose {
+  background-color: white;
+}
+
+.prose .wrap {
+
+}
+
 .prose a {
   color: #FF5F2B;
   font-weight: 700;
@@ -746,6 +750,10 @@ h3 strong {
   line-height: 1.2;
   margin-top: 2rem;
   margin-bottom: .5rem;
+}
+
+.prose h3:first-child {
+  margin-top: 0;
 }
 .prose p {
   margin-bottom: 1rem;
