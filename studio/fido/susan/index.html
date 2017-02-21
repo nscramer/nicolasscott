@@ -17,7 +17,7 @@
       <h1>The Puzzle of the Tasty Fist</h1>
       <h2>Impulse Control&nbsp;&sdot;&nbsp;Beginner&nbsp;&sdot;&nbsp;Five sessions</h2>
     </hgroup>
-    <a class="videoPlayButton" href="#">Watch video</a>
+    <a class="videoPlayButton" href="https://youtu.be/Yi4d3GAN6Ak?autoplay=1" data-lity>Watch video</a>
     <a class="helpLink" href="sms:513-435-2480">Help</a>
   </header>
   <section class="listWrap">
@@ -48,19 +48,9 @@
         </a>
       </li>
       
-      <!-- Theory Video -->
+      <!-- Session Three -->
       <li>
-        <a id="s3" class="tile session-theory-video" href="#">
-          <span class="sessionStatus"></span>
-          <div class="sessionInfo">
-            <h3 class="sessionTitle">Premack Principle</h3>
-          </div>
-          <span>
-        </a>
-      </li>
-      
-      <li>
-        <a id="s4" class="tile" href="session3/">
+        <a id="s3" class="tile" href="session3/">
           <span class="sessionStatus"></span>
           <div class="sessionInfo">
             <h3 class="sessionTitle">Is he, is he paying attention?</h3>
@@ -70,8 +60,9 @@
         </a>
       </li>
       
+      <!-- Session Four -->
       <li>
-        <a id="s5" class="tile" href="session4/">
+        <a id="s4" class="tile" href="session4/">
           <span class="sessionStatus"></span>
           <div class="sessionInfo">
             <h3 class="sessionTitle">I can almost touch them!</h3>
@@ -81,6 +72,18 @@
         </a>
       </li>
       
+      <!-- Premack Theory Video -->
+      <li>
+        <a id="s5" class="tile session-theory-video" href="theory/">
+          <span class="sessionStatus"></span>
+          <div class="sessionInfo">
+            <h3 class="sessionTitle">Premack Principle</h3>
+          </div>
+          <span>
+        </a>
+      </li>
+
+      <!-- Session Five -->
       <li>
         <a id="s6" class="tile" href="session5/">
           <span class="sessionStatus"></span>
@@ -136,7 +139,7 @@
         document.getElementById('s2').className = "tile session-completed";
         document.getElementById('s3').className = "tile session-next";
         document.getElementById('s4').className = "tile session-locked";
-        document.getElementById('s5').className = "tile session-locked";
+        document.getElementById('s5').className = "tile session-theory-video session-locked";
         document.getElementById('s6').className = "tile session-locked";
 
       } else if(document.querySelector('body').classList.contains('s3')) {
@@ -144,7 +147,7 @@
         document.getElementById('s2').className = "tile session-completed";
         document.getElementById('s3').className = "tile session-completed";
         document.getElementById('s4').className = "tile session-next";
-        document.getElementById('s5').className = "tile session-locked";
+        document.getElementById('s5').className = "tile session-theory-video session-locked";
         document.getElementById('s6').className = "tile session-locked";
     
       } else if(document.querySelector('body').classList.contains('s4')) {
@@ -152,7 +155,7 @@
         document.getElementById('s2').className = "tile session-completed";
         document.getElementById('s3').className = "tile session-completed";
         document.getElementById('s4').className = "tile session-completed";
-        document.getElementById('s5').className = "tile session-next";
+        document.getElementById('s5').className = "tile session-theory-video session-next";
         document.getElementById('s6').className = "tile session-locked";
     
       } else if(document.querySelector('body').classList.contains('s5')) {
@@ -160,7 +163,7 @@
         document.getElementById('s2').className = "tile session-completed";
         document.getElementById('s3').className = "tile session-completed";
         document.getElementById('s4').className = "tile session-completed";
-        document.getElementById('s5').className = "tile session-completed";
+        document.getElementById('s5').className = "tile session-theory-video session-completed";
         document.getElementById('s6').className = "tile session-next";
 
       } else if(document.querySelector('body').classList.contains('s6')) {

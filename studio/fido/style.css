@@ -64,6 +64,12 @@ img {
   align: text-top;
 }
 
+a:hover,
+a:focus,
+a:active {
+  outline: none;
+}
+
 .u-clearfix {
   zoom:1;
 }
@@ -701,4 +707,60 @@ h3 strong {
 .timer-slide .btn {
   background: transparent;
   border: 1px solid rgba(255,255,240,0.33 );
+}
+
+.inlineVideoCover {
+  height: 50vw;
+  position: relative;
+  background-color: #ACA399;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.inlineVideoCover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(125deg, rgba(90,72,61,0.50) 55%, rgba(90,72,61,0.0) 75%);
+}
+
+.inlineVideoCover .videoPlayButton {
+  position: relative;
+  z-index: 2;
+}
+
+.prose a {
+  color: #FF5F2B;
+  font-weight: 700;
+}
+.prose h3 {
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+}
+.prose p {
+  margin-bottom: 1rem;
+}
+
+.inlineVideoCover.premack {
+  background-image: url("images/premack-video-cover.jpg");
+}
+
+.fleuron {
+  height: 1rem;
+  background-color: transparent;
+  background-image: url("images/fleuron.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin: 3rem 0 1rem 0;
 }
