@@ -19,6 +19,7 @@ function setProgressBarWidth () {
     document.querySelector('.progressBarProgress').style.width = "83.333333333%";
   } else if (currentProgress == "s6") {
     document.querySelector('.progressBarProgress').style.width = "100%";
+    setTimeout("location.href = '../done/';",3000);
   } else {
     document.querySelector('.progressBarProgress').style.width = "0%";
   }

@@ -793,3 +793,37 @@ h3 strong {
 .nux .swiper-button-prev {
   background-image: url("images/left-arrow.svg");
 }
+
+.done {
+  color: white;
+  background-color: #C6ED2E;
+  text-align: center;
+}
+
+.doneInner {
+  margin-top: 15vh;
+}
+.bigCompleteIcon {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url("images/completed-icon-white.svg");
+}
+
+.doneInner .bigCompleteIcon {
+  margin-bottom: 1rem;
+}
+
+.done .stuckBottomButtonWrap {
+  background: transparent;
+}
+
+.done .btn {
+  box-shadow: none;
+}
