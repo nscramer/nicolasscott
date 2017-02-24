@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fido • Impulse Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-title" content="Fido">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/apple-touch-icon-152x152.png">
+    <link rel="stylesheet" href="../../bower_components/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../lity.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.css">
+</head>
+<body class="nux">
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <div class="swiper-wrapper">
+
+          <!-- NUX 1 -->
+          <div class="swiper-slide onboarding-slide">
+            <div class="wrap">
+              <header>
+                <hgroup>
+                  <h3>Everyone we&rsquo;ve ever met who has a dog wants them to be better trained.<br><br>Well-behaved dogs are safer, more confident, happier, and easier for anyone to be around.</h3>
+                </hgroup>
+              </header>
+            </div>
+          </div>
+          
+          <!-- NUX 2 -->
+          <div class="swiper-slide onboarding-slide">
+            <div class="wrap">
+              <header>
+                <hgroup>
+                  <h3>But our only training options are years behind the products we use in the rest of our lives.<br><br>That makes it tough for most of us to stick it out long enough to see the results we want.</h3>
+                </hgroup>
+              </header>
+            </div>
+          </div>
+          
+          <!-- NUX 3 -->
+          <div class="swiper-slide onboarding-slide">
+            <div class="wrap">
+              <header>
+                <hgroup>
+                  <h3>So we thought, what if we tried designing a dog training system from scratch?<br><br>What if it&rsquo;s as simple and fun for people like us as it is useful and productive for our dogs?</h3>
+                </hgroup>
+              </header>
+            </div>
+          </div>
+          
+          <!-- NUX 4 -->
+          <div class="swiper-slide onboarding-slide">
+            <div class="wrap">
+              <header>
+                <hgroup>
+                  <h3>This is a prototype lesson from an app we might build.<br><br>It&rsquo;s all about habit&mdash;a couple short, fun bursts of training on most days.<br><br>We based it on research from canine behaviorists and human behavioral designers.</h3>
+                </hgroup>
+              </header>
+            </div>
+          </div>
+          
+          <!-- NUX 5 -->
+          <div class="swiper-slide onboarding-slide">
+            <div class="wrap">
+              <header>
+                <hgroup>
+                  <h3>We&rsquo;re going to experiment using it for a few days.<br><br>It&rsquo;ll take as little as 5 minutes a day for 5 days.<br><br>Are you and <span class="dogName">Izzie</span> game?</h3>
+                </hgroup>
+              </header>
+              <div class="bottom stuckBottomButtonWrap">
+                <a class="btn js-swiper-next js-endOnboarding" onclick="setLocalUserName();" href="../">Let&rsquo;s do it</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="../../bower_components/swiper/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true
+    });
+    </script>
+    
+    <script>
+      // THIS IS WHERE I MANUALLY SET THE USER NAME FOR EACH PERSON
+      function setLocalUserName() {
+        localStorage.setItem('localUserName', 'John');
+        localStorage.setItem('lessonProgress', 's0');
+      }
+    </script>
+
+</body>
+</html>
