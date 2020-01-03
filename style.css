@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'apercu';
+  src: url("/fonts/apercu-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'apercu';
+  src: url("/fonts/apercu-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, b, i, ol, ul, li, figure, figcaption, footer, header, hgroup {
   margin: 0;
   padding: 0;
@@ -20,10 +34,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  background-color: #FFFDFB;
+  background-color: #FFF;
   border-top: 4px solid #151203;
-  font: normal 400 16px/150% "le-monde-livre-std";
-  color: #151203;
+  font: normal 400 16px/150% 'apercu';
+  color: #212121;
 }
 
 img {
@@ -32,15 +46,15 @@ img {
 }
 
 a {
-  border-bottom: 1px dotted;
+  border-bottom: 1px dotted #212121;
 }
 
 a:hover,
 a:focus,
 a:active {
   outline: none;
-  color: #8D897E;
-  border-bottom-color: #8D897E;
+  color: #F6B708;
+  border-bottom-color: #F6B708;
 }
 
 .pageWrap {
@@ -59,15 +73,14 @@ a:active {
 }
 
 .full {
-  padding: 1rem 1.5rem;
+  padding: 3rem 1.5rem 0 1.5rem;
 }
 
 .pageTitle {
-  font-size: 1.125rem;
-  letter-spacing: .145rem;
-  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-style: italic;
   line-height: 1.4;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h2 {
@@ -115,7 +128,7 @@ li {
 }
 
 figcaption {
-  font-family: "lemonde-sans";
+  font-family: "apercu";
   font-size: .75rem;
   line-height: 1.4;
   padding: 1rem 2rem;
@@ -123,7 +136,7 @@ figcaption {
 }
 
 .pageTitle a {
-  font-weight: 400;
+  font-weight: 700;
   border: none;
 }
 
@@ -146,7 +159,8 @@ figcaption {
 
 .aside {
   text-align: center;
-  font-family: "lemonde-sans";
+  font-family: "apercu";
+  font-weight: 700;
   font-size: .75rem;
   line-height: 1.4;
   margin: 0 1.5rem 1rem 1.5rem;
@@ -169,7 +183,7 @@ figcaption {
 }
 
 .name {
-  font-family: "lemonde-sans";
+  font-family: "apercu";
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
@@ -228,22 +242,22 @@ figcaption {
 }
 
 .listTitle {
-  font-family: "lemonde-sans";
+  font-family: "apercu";
   margin-bottom: .75rem;
-  font-size: .75rem;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
 .ledeList {
   list-style: none;
-  font-style: italic;
-  font-size: 1.125rem;
+/*  font-style: italic;*/
+  font-size: 1rem;
   padding: 0;
-  margin-top: .625rem;
+  margin-top: .75rem;
 }
 
 .ledeList > li {
-  margin-bottom: .75rem;
+  margin-bottom: 1rem;
   padding: 0;
 }
 
@@ -298,14 +312,6 @@ figcaption {
     margin: 1% 0 1% 1%;
   }
 }
-
-
-@media only screen and (min-width: 23rem) {
-  .pageTitle {
-    letter-spacing: .32rem;
-  }
-}
-
 
 @media only screen and (min-width: 48rem) {
   header {
