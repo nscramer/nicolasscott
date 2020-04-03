@@ -250,7 +250,6 @@ figcaption {
 
 .ledeList {
   list-style: none;
-/*  font-style: italic;*/
   font-size: 1rem;
   padding: 0;
   margin-top: .75rem;
@@ -327,7 +326,7 @@ figcaption {
   }
 
   .full {
-    width: 50%;
+    width: 40%;
     padding: 1rem 0;
   }
 
@@ -350,7 +349,7 @@ figcaption {
     width: 23.5%;
     margin: 1% 0 1% 1%;
   }
-  
+
   .figureGrid--twoWide .figureWrap {
     display: inline-block;
     width: 48%;
@@ -364,7 +363,6 @@ figcaption {
   }
 }
 
-
 @media only screen and (min-width: 67rem) {
   .aperture-pin {
     width: 256px;
@@ -375,9 +373,7 @@ figcaption {
   }
 }
 
-
 @media only screen and (min-width: 72rem) {
-
   h2 {
     font-size: 3.6666rem;
     line-height: 1.25;
@@ -391,9 +387,7 @@ figcaption {
   }
 }
 
-
 @media only screen and (min-width: 75rem) {
-
   .aside {
     margin: 1.25rem 0 0 0;
     padding: 1rem 1rem 0 0;
@@ -406,7 +400,7 @@ figcaption {
     border-top-color: #d9d9d9;
     background-color: #212121;
   }
-  
+
   a {
     border-bottom-color: #d9d9d9;
   }
@@ -417,5 +411,4 @@ figcaption {
     color: #F6B708;
     border-bottom-color: #F6B708;
   }
-  
 }
